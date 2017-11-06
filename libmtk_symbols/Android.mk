@@ -16,7 +16,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-    crypto_malloc.c \
+    ssl.c \
     mtk_wvm.cpp \
     mtk_ui.cpp \
     mtk_ril.cpp \
