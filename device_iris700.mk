@@ -3,9 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/Micromax/A102/A102-vendor.mk)
+$(call inherit-product-if-exists, vendor/lava/iris700/iris700-vendor.mk)
 
-LOCAL_PATH := device/Micromax/A102
+LOCAL_PATH := device/lava/iris700
 
 PRODUCT_CHARACTERISTICS := default
 
@@ -145,16 +145,16 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml	
 
 PRODUCT_PROPERTY_OVERRIDES := \
-	ro.mediatek.version.release=ALPS.W10.24.p0 \
+	ro.mediatek.version.release=ALPS.KK1.MP7.V1 \
 	ro.mediatek.platform=MT6572 \
 	ro.mediatek.chip_ver=S01 \
-	ro.mediatek.version.branch=KK1.MP1 \
+	ro.mediatek.version.branch=KK1.MP7 \
 	ro.mediatek.version.sdk=2 \
 	ro.telephony.sim.count=2 \
 	ro.allow.mock.location=0 \
-	ro.debuggable=1 \
+	ro.debuggable=0 \
 	persist.sys.usb.config=mtp,adb \
-	persist.service.adb.enable=1 \
+	persist.service.adb.enable=0 \
 	persist.service.debuggable=1 \
 	persist.mtk.wcn.combo.chipid=-1
 
@@ -162,12 +162,12 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.media.use-awesome=true
 
-PRODUCT_NAME := full_A102
-PRODUCT_DEVICE := A102
+PRODUCT_NAME := full_iris700
+PRODUCT_DEVICE := iris700
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 854
-TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 540
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal

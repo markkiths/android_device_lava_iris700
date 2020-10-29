@@ -1,7 +1,7 @@
 # inherit from the proprietary version
--include vendor/Micromax/A102/BoardConfigVendor.mk
+-include vendor/lava/iris700/BoardConfigVendor.mk
 
-LOCAL_PATH := device/Micromax/A102
+LOCAL_PATH := device/lava/iris700
 
 # Off NINJA
 #USE_NINJA := false
@@ -35,7 +35,7 @@ TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := A102
+TARGET_OTA_ASSERT_DEVICE := iris700
 
 # MTK HARDWARE
 OLD_KERNEL := true
